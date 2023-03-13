@@ -1,0 +1,75 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #06bee1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: #9fe007;
+    padding: 20px;
+    display: none;
+    box-shadow: 10px 10px #00000050;
+    border-radius: 10px;
+}
+
+#container  > .block {
+    padding: 20px;
+}
+
+.information-container {
+    display: flex;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+#location {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.block:first-child {
+    background-color: #9fe007;
+    color: #2541b2;
+}
+
+
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
